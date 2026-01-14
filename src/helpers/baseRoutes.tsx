@@ -1,4 +1,3 @@
 export const baseRoutes = {
-    // frontendBaseRoutes: "",
-    adminBaseRoutes: "",
+  adminBaseRoutes: "",
 };

@@ -26,7 +26,7 @@ function App() {
         <ThemeProvider defaultTheme="light" storageKey="admin-ui-theme">
           <Suspense
             fallback={
-              <div className="flex items-center justify-center h-screen">
+              <div className="loaderPage flex items-center justify-center h-screen">
                 <h2>Loading...</h2>
               </div>
             }
