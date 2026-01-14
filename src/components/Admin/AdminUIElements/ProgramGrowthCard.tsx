@@ -4,6 +4,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/admin-ui/card";
+import { Progress } from "@/components/admin-ui/progress";
 import {
   Tabs,
   TabsContent,
@@ -124,12 +125,10 @@ export const ProgramGrowthCard = () => {
                         {item.count} Partners
                       </span>
                     </div>
-                    <div className="h-2.5 w-full bg-[#F5F5F4] rounded-full overflow-hidden">
-                      <div
-                        className={`h-full rounded-full ${item.color}`}
-                        style={{ width: item.width }}
-                      ></div>
-                    </div>
+                    <Progress
+                      value={parseInt(item.width)}
+                      indicatorClassName={item.color}
+                    />
                   </div>
                 ))}
               </div>
